@@ -26,3 +26,13 @@ When you need to analyze, count, filter, compare, search, parse, transform, or p
 - Keep responses under 500 words.
 - Write artifacts (code, configs) to FILES — never return them as inline text.
 - Return only: file path + 1-line description.
+
+## ASE-Workflow (verbindlich bei Code/Skripten)
+
+Der ASE-Workflow (projektlokale rse/ase-Umsetzung des universellen ASE-Arbeitsmodells) ist Pflicht:
+Briefing (`ase-task-edit`/`-grill`) → Umsetzung (`ase-task-implement`/`ase-code-craft`/`-resolve`/`-refactor`)
+→ Vorprüfung (`ase-task-preflight`, `--dry`) → evidenzbasierte Freigabe (`ase-meta-review`/`ase-meta-diff`)
+→ Commit-Messages (`ase-meta-commit`). Kein Ad-hoc-Durchbauen. Arbeitspakete = eigene ASE-Tasks: vor dem
+Agenten-Spawn per `ase_task_save` persistieren, der Agent lädt den Plan per `ase_task_load`, das Ergebnis
+wird in den Task zurückgeschrieben. rse/ase ist local installiert (`.claude/settings.local.json`).
+Begriffe + Kommando-Mapping: `~/.claude/workflows/ase-workflow.md`.

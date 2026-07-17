@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "ase": {
+      "source": {
+        "source": "directory",
+        "path": "/opt/homebrew/lib/node_modules/@rse/ase"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "ase@ase": true
+  }
+}
