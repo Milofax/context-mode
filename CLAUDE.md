@@ -35,4 +35,12 @@ Briefing (`ase-task-edit`/`-grill`) → Umsetzung (`ase-task-implement`/`ase-cod
 → Commit-Messages (`ase-meta-commit`). Kein Ad-hoc-Durchbauen. Arbeitspakete = eigene ASE-Tasks: vor dem
 Agenten-Spawn per `ase_task_save` persistieren, der Agent lädt den Plan per `ase_task_load`, das Ergebnis
 wird in den Task zurückgeschrieben. rse/ase ist local installiert (`.claude/settings.local.json`).
-Begriffe + Kommando-Mapping: `~/.claude/workflows/ase-workflow.md`.
+
+**Verbindliche Referenzen (lesen, nicht raten):** `~/.claude/workflows/ase-workflow.md` — ASE-Arbeitsmodell, die
+drei Ebenen (Arbeitsmodell ≠ rse/ase-Toolkit ≠ ASE-Workflow) und das Kommando-Mapping je Phase ·
+`~/.claude/workflows/ase-toolset.md` — Kommando-Ablauf des Toolkits (Zustände SKETCH/APPROACHES/TASK/ARTIFACT,
+die vier Modi, alle Kanten; generiert aus der offiziellen Grafik `https://ase.tools/assets/workflow.svg`). Beide
+sind **bindend** und werden vor Prozess-/Werkzeugentscheidungen gelesen. Wo der ASE-Workflow gilt, ist die volle
+ase-Skill-Nutzung je Phase verbindlich (Analyse → `ase-code-analyze`/`ase-arch-analyze`/`ase-code-insight`;
+Planung → `ase-task-edit`/`-grill`/`-id`; Umsetzung → `ase-code-craft`/`-resolve`/`-refactor` bzw.
+`ase-task-implement`/`-preflight`; Freigabe → `ase-meta-review`/`-diff`/`-commit`).
