@@ -29,12 +29,10 @@ When you need to analyze, count, filter, compare, search, parse, transform, or p
 
 ## ASE-Workflow (verbindlich bei Code/Skripten)
 
-Der ASE-Workflow ist Pflicht. Kein Ad-hoc-Durchbauen. Arbeitspakete = eigene ASE-Tasks: vor dem
-Agenten-Spawn per `ase_task_save` persistieren, der Agent lädt den Plan per `ase_task_load`, das Ergebnis
-wird in den Task zurückgeschrieben.
+Der ASE-Workflow ist Pflicht. Orchestrierung und Task-Übergabe: `~/.claude/workflows/ase-orchestrierung.md`.
 
-**Verbindliche Referenzen (lesen, nicht raten):** `~/.claude/workflows/ase-workflow.md` — ASE-Arbeitsmodell und
-Ablauf · `~/.claude/workflows/ase-tools.md` — CLI und Setup · `~/.claude/workflows/ase-skills.md` — Skills je Phase ·
+**Verbindliche Referenzen (lesen, nicht raten):** `~/.claude/workflows/ase-workflow.md` — Ablauf, Modi, Bedienregeln ·
+`~/.claude/workflows/ase-tools.md` — CLI und Setup · `~/.claude/workflows/ase-skills.md` — Skills je Phase ·
 `~/.claude/workflows/review-verfahren.md` — Review und Freigabe (Abschnitte „Review-Auftrag, Diff-Quelle und Rollen“
 und „Gemeinsames Freigabe-Gate für A und B“). Die Referenzen sind **bindend** und werden vor
 Prozess-/Werkzeugentscheidungen gelesen. Wo der ASE-Workflow gilt, ist die volle ase-Skill-Nutzung je Phase verbindlich.
