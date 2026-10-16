@@ -17,3 +17,4 @@ tasks/
 AGENTS.md
 context-mode-guidance-*/
 .claude/worktrees/
+.claude/settings.local.json
