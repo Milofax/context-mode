@@ -29,18 +29,12 @@ When you need to analyze, count, filter, compare, search, parse, transform, or p
 
 ## ASE-Workflow (verbindlich bei Code/Skripten)
 
-Der ASE-Workflow (projektlokale rse/ase-Umsetzung des universellen ASE-Arbeitsmodells) ist Pflicht:
-Briefing (`ase-task-edit`/`-grill`) → Umsetzung (`ase-task-implement`/`ase-code-craft`/`-resolve`/`-refactor`)
-→ Vorprüfung (`ase-task-preflight`, `--dry`) → evidenzbasierte Freigabe (`ase-meta-review`/`ase-meta-diff`)
-→ Commit-Messages (`ase-meta-commit`). Kein Ad-hoc-Durchbauen. Arbeitspakete = eigene ASE-Tasks: vor dem
+Der ASE-Workflow ist Pflicht. Kein Ad-hoc-Durchbauen. Arbeitspakete = eigene ASE-Tasks: vor dem
 Agenten-Spawn per `ase_task_save` persistieren, der Agent lädt den Plan per `ase_task_load`, das Ergebnis
-wird in den Task zurückgeschrieben. rse/ase ist local installiert (`.claude/settings.local.json`).
+wird in den Task zurückgeschrieben.
 
-**Verbindliche Referenzen (lesen, nicht raten):** `~/.claude/workflows/ase-workflow.md` — ASE-Arbeitsmodell, die
-drei Ebenen (Arbeitsmodell ≠ rse/ase-Toolkit ≠ ASE-Workflow) und das Kommando-Mapping je Phase ·
-`~/.claude/workflows/ase-toolset.md` — Kommando-Ablauf des Toolkits (Zustände SKETCH/APPROACHES/TASK/ARTIFACT,
-die vier Modi, alle Kanten; generiert aus der offiziellen Grafik `https://ase.tools/assets/workflow.svg`). Beide
-sind **bindend** und werden vor Prozess-/Werkzeugentscheidungen gelesen. Wo der ASE-Workflow gilt, ist die volle
-ase-Skill-Nutzung je Phase verbindlich (Analyse → `ase-code-analyze`/`ase-arch-analyze`/`ase-code-insight`;
-Planung → `ase-task-edit`/`-grill`/`-id`; Umsetzung → `ase-code-craft`/`-resolve`/`-refactor` bzw.
-`ase-task-implement`/`-preflight`; Freigabe → `ase-meta-review`/`-diff`/`-commit`).
+**Verbindliche Referenzen (lesen, nicht raten):** `~/.claude/workflows/ase-workflow.md` — ASE-Arbeitsmodell und
+Ablauf · `~/.claude/workflows/ase-tools.md` — CLI und Setup · `~/.claude/workflows/ase-skills.md` — Skills je Phase ·
+`~/.claude/workflows/review-verfahren.md` — Review und Freigabe (Abschnitte „Review-Auftrag, Diff-Quelle und Rollen“
+und „Gemeinsames Freigabe-Gate für A und B“). Die Referenzen sind **bindend** und werden vor
+Prozess-/Werkzeugentscheidungen gelesen. Wo der ASE-Workflow gilt, ist die volle ase-Skill-Nutzung je Phase verbindlich.
