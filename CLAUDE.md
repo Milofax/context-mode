@@ -27,7 +27,11 @@ When you need to analyze, count, filter, compare, search, parse, transform, or p
 - Write artifacts (code, configs) to FILES — never return them as inline text.
 - Return only: file path + 1-line description.
 
-## ASE-Workflow (verbindlich bei Code/Skripten)
+## ASE-Workflow (verbindlich bei jeder Aufgabe)
+
+- **Session-Start:** Vor Planung oder Arbeit `~/.claude/workflows/ase-workflow.md`, `ase-skills.md` und `ase-rezepte.md`
+  lesen (Lead zusätzlich `ase-orchestrierung.md`) — bei jeder Aufgabe, auch Recherche und sonstiger Wissensarbeit, und in
+  jedem delegierten Worker.
 
 Der ASE-Workflow ist Pflicht. Orchestrierung und Task-Übergabe: `~/.claude/workflows/ase-orchestrierung.md`.
 
